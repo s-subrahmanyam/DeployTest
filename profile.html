@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar a.active {
+            background-color: black;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        /* Main Profile Content */
+        .profile-container {
+            margin-top: 60px; /* Offset for navbar height */
+            padding-bottom: 20px;
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            text-align: left;
+        }
+
+        .profile-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+            border-bottom: 2px solid #3cb371;
+            padding-bottom: 5px;
+            width: fit-content;
+        }
+
+        .profile-info {
+            margin: 20px 0;
+        }
+
+        .profile-info p {
+            margin: 8px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .edit-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3cb371;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .edit-button:hover {
+            background-color: #2e8b57;
+        }
+
+        .donations-section {
+            margin-top: 30px;
+        }
+
+        .donations-section h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+            padding-bottom: 5px;
+            color: black;
+            text-align: left;
+            border-bottom: 2px solid #3cb371;
+            width: fit-content;
+        }
+
+        .donation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .donation-table th, .donation-table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #e0e0e0;
+        }
+
+        .donation-table th {
+            background-color: #3cb371;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .donation-table td {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Full-width Navbar at the Top -->
+    <div class="navbar">
+        <a href="index.html">Home</a> <!-- Link to home.html -->
+        <a href="about.html">About</a> <!-- Link to about.html -->
+        <a href="contact.html">Contact</a> <!-- Link to contact.html -->
+        <a href="#" class="active">Profile</a>
+    </div>
+
+    <!-- Profile Content -->
+    <div class="profile-container">
+        <div class="profile-header">Profile</div>
+        
+        <div class="profile-info">
+            <p>Name: [User Name]</p>
+            <p>Email: [User Email]</p>
+            <p>Gender: [User Gender]</p>
+        </div>
+        
+        <button class="edit-button">Edit</button>
+        
+        <div class="donations-section">
+            <h2>Your Donations</h2>
+            <table class="donation-table">
+                <tr>
+                    <th>Food</th>
+                    <th>Quantity</th>
+                    <th>Date/Time</th>
+                    <th>Status</th>
+                </tr>
+                <!-- Example Donation Rows -->
+                <tr>
+                    <td>Example Food</td>
+                    <td>10 kg</td>
+                    <td>2024-10-29 10:30</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Another Food</td>
+                    <td>5 kg</td>
+                    <td>2024-10-30 11:00</td>
+                    <td>Completed</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

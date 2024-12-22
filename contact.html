@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donate - Contact Us</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        .food {
+            color: black;
+        }
+
+        .donate {
+            color: green;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 8px 16px;
+        }
+
+        nav ul li a.active {
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 60px 20px;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 32px;
+            color: #00b050;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: #ffffff;
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 16px;
+            color: #333;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            resize: vertical;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #00b050;
+            outline: none;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: white;
+            background-color: #00b050;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #008f3e;
+        }
+
+        /* Contact Information */
+        .contact-info {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+
+        /* Chat Bot Support */
+        .chat-bot {
+            background-color: #e6ffec;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 30px auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-bot h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .chat-bot input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><span class="food">Food</span> <span class="donate">Donate</span></h1>
+    <nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active" >Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Send</button>
+    </div>
+    <div class="contact-info">
+        <p>Email: spradeep6656@gmail.com</p>
+        <p>Phone: 9392977358</p>
+        <p>Address: KLH Bowrampet</p>
+    </div>
+    <div class="chat-bot">
+        <h3>Chat Bot Support</h3>
+        <input type="text" placeholder="Say something...">
+    </div>
+</section>
+
+</body>
+</html>

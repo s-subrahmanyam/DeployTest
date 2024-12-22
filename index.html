@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donate - Home</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #ffffff;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-right: 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        header nav ul li a.active {
+            color: #3cb371;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            text-align: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Quote Section */
+        .quote {
+            background-color: #3cb371;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+            font-style: italic;
+        }
+
+        /* Donate Now Button in Bottom Corner */
+        .donate-now-pop-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 15px 30px;
+            background-color: #3cb371;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .donate-now-pop-button:hover {
+            background-color: #2e8b57;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1><span class="food">Food</span> <span class="donate">Donate</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="donate.html">Donate Now</a></li> <!-- Added Donate Now link -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="display: flex; justify-content: center; align-items: center; padding: 20px;">
+        <img src="https://content.production.cdn.art19.com/images/21/7e/b2/8c/217eb28c-722b-4075-a5d0-12071fd7969f/5d77d5c0de11bc93d437f518a4ef293943208fd2698071483ec1c4b91d00a42a15b2f935c6c7e1026dd4ff23f833ea02cb7c7dbf56c1f46e8092647e3a2a34d7.jpeg" 
+             style="height: 400px; width: 400px; border: 8px solid; border-image: linear-gradient(45deg, #ff8c00, #ff00ff, #00ff00, #00ffff) 1; border-radius: 10px;" 
+             alt="Children sharing food">
+    </section>
+    
+    
+
+    <!-- Quote Section -->
+    <section class="quote">
+        <p>“Cutting food waste is a delicious way of saving money, helping to feed the world and protect the planet.”</p>
+    </section>
+
+    <!-- Donate Now Button in Bottom Corner -->
+    <a href="donate.html" class="donate-now-pop-button">Donate Now</a>
+
+</body>
+</html>

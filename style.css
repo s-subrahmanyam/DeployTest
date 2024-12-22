@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+.food {
+    color: black;
+}
+
+.donate {
+    color: green;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+/* Hero Section (for the Main Page) */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.donate-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Quote Section (for the Main Page) */
+.quote {
+    background-color: #00b050;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* About Section (for About Page) */
+.about-section {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.about-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
